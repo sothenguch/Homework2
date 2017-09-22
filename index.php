@@ -31,6 +31,10 @@
     echo "</right>";
     echo "<section>";
         echo "The original array in acending order: ";
+        for ($i=0; $i < 10; $i++){
+            echo "<br />";
+            echo $a[$i];
+        }
         echo "<br />";
         echo "There are $num1 even numbers : ";
         for ($i=0; $i < $num1; $i++){
