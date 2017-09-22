@@ -22,6 +22,7 @@
     echo "<header>";
         echo "This program will show  even or odd from an array of random numbers.";
     echo "</header>";
+    echo "<br />";
     echo "<left>";
          echo "<img src='assets/even.png'>";
     echo "</left>";
@@ -30,11 +31,19 @@
     echo "</right>";
     echo "<section>";
         echo "The original array in acending order: ";
-        var_dump($a);
+        echo "<br />";
         echo "There are $num1 even numbers : ";
-        var_dump($even);
+        for ($i=0; $i < $num1; $i++){
+            echo "<br />";
+            echo $even[$i];
+        }
+        echo "<br />";
         echo "There are $num2 odd numbers : ";
-        var_dump($odd);
+        for ($i=0; $i < $num2; $i++){
+            echo "<br />";
+            echo $odd[$i];
+        }
+    echo "<br />";
     if ($num1 > $num2){
         echo "There are more Even numbers!";
     }
